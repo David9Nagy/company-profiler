@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Report</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Report for {{ company_name }}</h1>
+    <div class="report">
+        {{ report|safe }}
+    </div>
+    <a href="/">Search Another Company</a>
+</body>
+</html>

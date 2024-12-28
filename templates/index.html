@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Info Finder</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Company Info Finder</h1>
+    <form action="/get_info" method="post">
+        <label for="company_name">Enter Company Name:</label><br>
+        <input type="text" id="company_name" name="company_name" required><br><br>
+        <input type="submit" value="Get Information">
+    </form>
+</body>
+</html>
